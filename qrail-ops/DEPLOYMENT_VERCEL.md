@@ -35,6 +35,8 @@ This project includes several optimizations for serverless deployment:
 - **Client-Side Routing:** Properly configured rewrites ensure all routes work correctly with React Router
 - **Security Headers:** Enhanced security with Content Security Policy and other HTTP headers
 - **Efficient Bundling:** Vite's optimized build process creates minimal bundles for fast loading
+- **Code Splitting:** Smart chunking strategy separates vendor libraries from application code
+- **Asset Caching:** Optimal cache headers for static assets to improve performance
 - **Zero Server Dependencies:** Pure frontend application that works perfectly in serverless environments
 
 ## Project Configuration Details
@@ -42,7 +44,7 @@ This project includes several optimizations for serverless deployment:
 This project includes the following configurations for seamless Vercel deployment:
 
 - `vercel.json`: Contains routing rewrites, enhanced security headers, and explicit build configuration optimized for serverless
-- `vite.config.js`: Configured with proper base path for client-side routing in serverless environments
+- `vite.config.js`: Configured with proper base path and code splitting for client-side routing in serverless environments
 - `package.json`: Includes dedicated vercel-build script for serverless optimization
 
 ## Custom Domain (Optional)

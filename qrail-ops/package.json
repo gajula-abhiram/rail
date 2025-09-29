@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "QRail Operations Dashboard - Optimized for Vercel Serverless Deployment",
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
