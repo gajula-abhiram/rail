@@ -1,0 +1,79 @@
+.delay-cascade-predictor {
+  margin-top: 1.5rem;
+}
+
+.predictor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.timeframe-selector {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.timeframe-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  background-color: var(--card-background);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.timeframe-btn.active {
+  background-color: var(--on-time);
+  color: #000000;
+  border-color: var(--on-time);
+}
+
+.timeframe-btn:hover:not(.active) {
+  background-color: var(--border);
+}
+
+.predictor-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.forecast-cards {
+  display: flex;
+  gap: 1rem;
+}
+
+.forecast-card {
+  flex: 1;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--card-background);
+}
+
+.card-title {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.card-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.chart-container h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.chart-wrapper {
+  height: 200px;
+}

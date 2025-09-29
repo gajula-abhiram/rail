@@ -1,0 +1,75 @@
+:root {
+  --on-time: #2563EB; /* Blue */
+  --late: #2563EB; /* Changed to blue to avoid orange/yellow */
+  --delayed: #2563EB; /* Changed to blue to avoid red */
+  --cancelled: #2563EB; /* Changed to blue to avoid grey */
+  --approaching: #2563EB; /* Changed to blue to avoid purple */
+  
+  --background: #e0f2fe; /* Light blue background */
+  --card-background: #f0f9ff; /* Even lighter blue for cards */
+  --border: #bae6fd; /* Light blue border */
+  --text-primary: #000000; /* Pure black text */
+  --text-secondary: #000000; /* Pure black text */
+  
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text-primary);
+  background-color: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: var(--on-time);
+  text-decoration: inherit;
+}
+a:hover {
+  color: #000000;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--card-background);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: var(--on-time);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #000000; /* Pure black text */
+    background-color: #e0f2fe; /* Light blue background */
+  }
+}

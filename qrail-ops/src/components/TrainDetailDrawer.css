@@ -1,0 +1,226 @@
+.train-detail-drawer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.drawer-header {
+  margin-bottom: 2rem;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: var(--on-time);
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.back-btn:hover {
+  background-color: var(--border);
+}
+
+.train-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+.train-status {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.delay-info {
+  font-weight: 500;
+}
+
+.next-stops {
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+.drawer-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.action-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  background-color: var(--card-background);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background-color: var(--border);
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  padding: 1rem 2rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-bottom: 3px solid transparent;
+}
+
+.tab-btn.active {
+  color: var(--on-time);
+  border-bottom: 3px solid var(--on-time);
+}
+
+.tab-btn:hover:not(.active) {
+  background-color: var(--border);
+}
+
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.timeline-event {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--card-background);
+}
+
+.event-time {
+  width: 80px;
+  font-weight: 500;
+}
+
+.event-details {
+  flex: 1;
+}
+
+.event-station {
+  font-weight: 600;
+}
+
+.event-action {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.event-platform {
+  width: 100px;
+}
+
+.event-status {
+  width: 100px;
+}
+
+.coach-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.coach-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--card-background);
+}
+
+.coach-info {
+  flex: 1;
+}
+
+.coach-number {
+  font-weight: 600;
+}
+
+.coach-class {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.platform-info {
+  width: 120px;
+}
+
+.coach-status {
+  width: 100px;
+}
+
+.conflicts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.conflict-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--card-background);
+}
+
+.conflict-description {
+  flex: 1;
+}
+
+.conflict-time {
+  width: 80px;
+  color: var(--text-secondary);
+}
+
+.conflict-status {
+  width: 100px;
+}
+
+.logs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.log-item {
+  display: grid;
+  grid-template-columns: 120px 100px 150px 100px 1fr 80px;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--card-background);
+  font-size: 0.9rem;
+}
+
+.log-timestamp {
+  font-weight: 500;
+}
+
+.log-user {
+  color: var(--text-secondary);
+}
+
+.log-action {
+  font-weight: 500;
+}
+
+.log-eta {
+  font-weight: 600;
+  color: var(--on-time);
+}

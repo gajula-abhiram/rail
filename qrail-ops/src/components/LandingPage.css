@@ -1,0 +1,75 @@
+.landing-page {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.welcome-card {
+  text-align: center;
+}
+
+.welcome-card h1 {
+  margin-bottom: 1rem;
+}
+
+.welcome-description {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.navigation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.nav-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  background-color: var(--card-background);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-card h2 {
+  margin-top: 0;
+  color: var(--on-time);
+}
+
+.nav-card p {
+  color: var(--text-secondary);
+}
+
+.nav-icon {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.demo-instructions {
+  text-align: left;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: var(--card-background);
+  border-radius: 12px;
+  border-left: 4px solid var(--on-time);
+}
+
+.demo-instructions h3 {
+  margin-top: 0;
+}
+
+.demo-instructions ol {
+  padding-left: 1.5rem;
+}
+
+.demo-instructions li {
+  margin-bottom: 1rem;
+}

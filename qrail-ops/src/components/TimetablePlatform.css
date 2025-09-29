@@ -1,0 +1,152 @@
+.timetable-platform {
+  overflow-x: auto;
+}
+
+.timetable-container {
+  min-width: 1000px;
+}
+
+.platform-occupancy-header {
+  display: grid;
+  grid-template-columns: 200px 300px 1fr;
+  padding: 1rem;
+  background-color: var(--card-background);
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+}
+
+.station-row {
+  display: grid;
+  grid-template-columns: 200px 300px 1fr;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.station-row:last-child {
+  border-bottom: none;
+}
+
+.station-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.station-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.station-id {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.platform-count {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.platforms-visualization {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.platform-cell {
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  position: relative;
+}
+
+.platform-cell.status-on-time {
+  border-color: var(--on-time);
+  background-color: rgba(37, 99, 235, 0.1);
+}
+
+.platform-cell.status-late {
+  border-color: var(--late);
+  background-color: rgba(234, 179, 8, 0.1);
+}
+
+.platform-cell.status-delayed {
+  border-color: var(--delayed);
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+.platform-cell.status-cancelled {
+  border-color: var(--cancelled);
+  background-color: rgba(71, 85, 105, 0.1);
+}
+
+.platform-cell.status-approaching {
+  border-color: var(--approaching);
+  background-color: rgba(124, 58, 237, 0.1);
+}
+
+.train-on-platform {
+  position: absolute;
+  bottom: 2px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.train-id {
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.train-time {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+.station-trains {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.train-entry {
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--card-background);
+}
+
+.train-basic-info {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.train-name {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.train-details {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+.arrival-time {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}

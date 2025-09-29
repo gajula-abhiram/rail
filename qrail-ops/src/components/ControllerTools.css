@@ -1,0 +1,60 @@
+.controller-tools {
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.tools-header h2 {
+  margin: 0 0 1rem 0;
+}
+
+.tools-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.tool-group {
+  flex: 1;
+  min-width: 250px;
+}
+
+.tool-group h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.tool-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tool-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  background-color: var(--card-background);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.tool-btn:hover {
+  background-color: var(--border);
+}
+
+.simulation-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.simulation-time {
+  font-weight: 500;
+  background-color: var(--border);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}

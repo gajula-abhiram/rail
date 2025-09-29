@@ -1,0 +1,125 @@
+.audit-logs {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.logs-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 1.5rem;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.filter-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.filter-group select {
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background-color: var(--card-background);
+  color: var(--text-primary);
+}
+
+.export-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--on-time);
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  height: fit-content;
+}
+
+.export-btn:hover {
+  background-color: #93c5fd;
+}
+
+.logs-table {
+  overflow-x: auto;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 150px 100px 150px 100px 1fr 80px 100px;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--card-background);
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+}
+
+.table-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 150px 100px 150px 100px 1fr 80px 100px;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.row-timestamp {
+  font-weight: 500;
+}
+
+.row-user {
+  color: var(--text-secondary);
+}
+
+.row-action {
+  font-weight: 500;
+}
+
+.row-reason {
+  color: var(--text-secondary);
+}
+
+.row-impacted {
+  font-size: 0.9rem;
+}
+
+.row-eta {
+  font-weight: 600;
+  color: var(--on-time);
+}
+
+.row-severity {
+  text-transform: capitalize;
+  padding: 0.25rem 0.5rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.severity-high {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--delayed);
+}
+
+.severity-medium {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--late);
+}
+
+.severity-low {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--on-time);
+}
